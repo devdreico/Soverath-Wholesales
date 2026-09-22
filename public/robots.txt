@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://soverath.presentto.online/sitemap.xml
