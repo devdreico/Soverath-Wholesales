@@ -20,7 +20,7 @@ export default function Header() {
         productos.
       </p>
       <span className="sr-only">
-        Acceso a las tiendas afiliadas Botane, Viking Dogs, Blooxury, Esturel y
+        Acceso a las tiendas afiliadas Botane, Viking Dogs, Lun &amp; Lou, Esturel y
         Knifopics.
       </span>
 

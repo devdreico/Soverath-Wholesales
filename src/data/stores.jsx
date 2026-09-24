@@ -50,12 +50,12 @@ export const stores = [
   },
   {
     id: 3,
-    name: 'Blooxury',
+    name: 'Lun & Lou',
     category: 'Tienda 3',
     title: 'Belleza y cuidado femenino',
     description:
       'Cosmética, skincare y productos de belleza seleccionados con los mejores estándares.',
-    url: 'https://blooxury.presentto.online',
+    url: 'https://lyl.presentto.online/',
     accent: '#f472b6',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">

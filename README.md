@@ -10,7 +10,7 @@ Soverath Wholesales es una landing page central diseñada para presentar un conj
 
 - Botane — Salud natural
 - Viking Dogs — Gadgets para perros
-- Blooxury — Belleza y cuidado femenino
+- Lun & Lou — Belleza y cuidado femenino
 - Esturel — Tecnología y hardware
 - Knifopics — Cocina y alimentos
 
