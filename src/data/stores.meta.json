@@ -1,0 +1,200 @@
+[
+  {
+    "slug": "botane",
+    "name": "Botane",
+    "category": "Salud natural",
+    "index": "01",
+    "subdomain": "botane.presentto.online",
+    "url": "https://botane.presentto.online",
+    "accent": "#34d399"
+  },
+  {
+    "slug": "viking-dogs",
+    "name": "Viking Dogs",
+    "category": "Mascotas",
+    "index": "02",
+    "subdomain": "viking-dogs.presentto.online",
+    "url": "https://vikingdogs.presentto.online",
+    "accent": "#fbbf24"
+  },
+  {
+    "slug": "lun-lou",
+    "name": "Lun & Lou",
+    "category": "Belleza",
+    "index": "03",
+    "subdomain": "lun-lou.presentto.online",
+    "url": "https://lyl.presentto.online/",
+    "accent": "#f472b6"
+  },
+  {
+    "slug": "esturel",
+    "name": "Esturel",
+    "category": "Tecnología",
+    "index": "04",
+    "subdomain": "esturel.presentto.online",
+    "url": "https://esturel.presentto.online",
+    "accent": "#60a5fa"
+  },
+  {
+    "slug": "knifopics",
+    "name": "Knifopics",
+    "category": "Cocina",
+    "index": "05",
+    "subdomain": "knifopics.presentto.online",
+    "url": "https://knifopics.presentto.online",
+    "accent": "#fb7185"
+  },
+  {
+    "slug": "ferreza",
+    "name": "Ferreza",
+    "category": "Ferretería",
+    "index": "06",
+    "subdomain": "ferreza.presentto.online",
+    "url": "https://ferreza.presentto.online",
+    "accent": "#f97316"
+  },
+  {
+    "slug": "kidomo",
+    "name": "Kidomo",
+    "category": "Infantil",
+    "index": "07",
+    "subdomain": "kidomo.presentto.online",
+    "url": "https://kidomo.presentto.online",
+    "accent": "#a78bfa"
+  },
+  {
+    "slug": "textilura",
+    "name": "Textilura",
+    "category": "Textil y hogar",
+    "index": "08",
+    "subdomain": "textilura.presentto.online",
+    "url": "https://textilura.presentto.online",
+    "accent": "#e879f9"
+  },
+  {
+    "slug": "verdemar",
+    "name": "Verdemar",
+    "category": "Jardín",
+    "index": "09",
+    "subdomain": "verdemar.presentto.online",
+    "url": "https://verdemar.presentto.online",
+    "accent": "#84cc16"
+  },
+  {
+    "slug": "dermael",
+    "name": "Dermael",
+    "category": "Barbería",
+    "index": "10",
+    "subdomain": "dermael.presentto.online",
+    "url": "https://dermael.presentto.online",
+    "accent": "#cbd5e1"
+  },
+  {
+    "slug": "officina",
+    "name": "Officina",
+    "category": "Oficina",
+    "index": "11",
+    "subdomain": "officina.presentto.online",
+    "url": "https://officina.presentto.online",
+    "accent": "#22d3ee"
+  },
+  {
+    "slug": "kinetix",
+    "name": "Kinetix",
+    "category": "Deporte",
+    "index": "12",
+    "subdomain": "kinetix.presentto.online",
+    "url": "https://kinetix.presentto.online",
+    "accent": "#ff4d3d"
+  },
+  {
+    "slug": "aurela",
+    "name": "Aurela",
+    "category": "Joyas",
+    "index": "13",
+    "subdomain": "aurela.presentto.online",
+    "url": "https://aurela.presentto.online",
+    "accent": "#d4af37"
+  },
+  {
+    "slug": "brewmar",
+    "name": "Brewmar",
+    "category": "Café y bebidas",
+    "index": "14",
+    "subdomain": "brewmar.presentto.online",
+    "url": "https://brewmar.presentto.online",
+    "accent": "#c2884b"
+  },
+  {
+    "slug": "huertal",
+    "name": "Huertal",
+    "category": "Despensa",
+    "index": "15",
+    "subdomain": "huertal.presentto.online",
+    "url": "https://huertal.presentto.online",
+    "accent": "#facc15"
+  },
+  {
+    "slug": "novamoda",
+    "name": "Novamoda",
+    "category": "Moda",
+    "index": "16",
+    "subdomain": "novamoda.presentto.online",
+    "url": "https://novamoda.presentto.online",
+    "accent": "#a855f7"
+  },
+  {
+    "slug": "patas-and-co",
+    "name": "Patas & Co",
+    "category": "Cuidado animal",
+    "index": "17",
+    "subdomain": "patas-and-co.presentto.online",
+    "url": "https://patas-and-co.presentto.online",
+    "accent": "#fb923c"
+  },
+  {
+    "slug": "climaflow",
+    "name": "Climaflow",
+    "category": "Climatización",
+    "index": "18",
+    "subdomain": "climaflow.presentto.online",
+    "url": "https://climaflow.presentto.online",
+    "accent": "#38bdf8"
+  },
+  {
+    "slug": "ludika",
+    "name": "Ludika",
+    "category": "Juegos y hobbies",
+    "index": "19",
+    "subdomain": "ludika.presentto.online",
+    "url": "https://ludika.presentto.online",
+    "accent": "#2dd4bf"
+  },
+  {
+    "slug": "saniver",
+    "name": "Saniver",
+    "category": "Higiene y limpieza",
+    "index": "20",
+    "subdomain": "saniver.presentto.online",
+    "url": "https://saniver.presentto.online",
+    "accent": "#67e8f9"
+  },
+  {
+    "slug": "motorix",
+    "name": "Motorix",
+    "category": "Auto",
+    "index": "21",
+    "subdomain": "motorix.presentto.online",
+    "url": "https://motorix.presentto.online",
+    "accent": "#ef4444"
+  },
+  {
+    "slug": "escolarix",
+    "name": "Escolarix",
+    "category": "Escolar",
+    "index": "22",
+    "subdomain": "escolarix.presentto.online",
+    "url": "https://escolarix.presentto.online",
+    "accent": "#818cf8"
+  }
+]

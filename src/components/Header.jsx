@@ -1,4 +1,4 @@
-export default function Header() {
+export default function Header({ kicker, words, lead, badges }) {
   return (
     <header className="header">
       <div className="header__logo-wrap glass">
@@ -11,23 +11,24 @@ export default function Header() {
         />
       </div>
 
-      <p className="header__eyebrow">Gateway oficial</p>
+      <p className="header__eyebrow mono">{kicker}</p>
+
       <h1 className="header__title">
-        Soverath <span>Wholesales</span>
+        {words.map((word, i) => (
+          <span className="header__word" key={`${word}-${i}`} style={{ '--wi': i }}>
+            <span className="header__word-inner">{word}</span>
+          </span>
+        ))}
       </h1>
-      <p className="header__subtitle">
-        Importador de productos con inventario para diferentes bodegas de
-        productos.
-      </p>
-      <span className="sr-only">
-        Acceso a las tiendas afiliadas Botane, Viking Dogs, Lun &amp; Lou, Esturel y
-        Knifopics.
-      </span>
+
+      <p className="header__subtitle">{lead}</p>
 
       <div className="header__badges">
-        <span className="badge glass">5 tiendas afiliadas</span>
-        <span className="badge glass">Inventario multi-bodega</span>
-        <span className="badge glass">Compra segura</span>
+        {badges.map((badge) => (
+          <span className="badge glass mono" key={badge}>
+            {badge}
+          </span>
+        ))}
       </div>
     </header>
   )

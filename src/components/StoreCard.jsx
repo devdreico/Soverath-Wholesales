@@ -1,39 +1,70 @@
+import { Link } from 'react-router-dom'
+
 export default function StoreCard({ store, index }) {
-  const { name, category, title, description, url, accent, icon } = store
+  const { slug, index: number, name, category, title, description, url, accent } = store
+
+  const track = (e) => {
+    const rect = e.currentTarget.getBoundingClientRect()
+    e.currentTarget.style.setProperty('--mx', `${e.clientX - rect.left}px`)
+    e.currentTarget.style.setProperty('--my', `${e.clientY - rect.top}px`)
+  }
 
   return (
-    <a
+    <article
       className="card glass"
-      href={url}
-      target="_blank"
-      rel="noopener noreferrer"
-      style={{ '--accent': accent, '--delay': `${index * 70}ms` }}
+      style={{ '--accent': accent, '--delay': `${(index % 12) * 55}ms` }}
+      onPointerMove={track}
     >
-      <span className="card__icon" aria-hidden="true">
-        {icon}
+      <span className="card__index mono" aria-hidden="true">
+        {number}
       </span>
+      <span className="card__spot" aria-hidden="true" />
+      <span className="card__edge" aria-hidden="true" />
 
-      <span className="card__body">
+      <div className="card__head">
+        <span className="card__icon" aria-hidden="true">
+          {store.icon}
+        </span>
         <span className="card__meta">
           <span className="card__category">{category}</span>
-          <span className="card__dot" aria-hidden="true" />
-          <span className="card__name">{name}</span>
+          <span className="card__name mono">{slug}</span>
         </span>
-        <span className="card__title">{title}</span>
-        <span className="card__description">{description}</span>
-      </span>
+      </div>
 
-      <span className="card__cta" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none">
-          <path
-            d="M8 16 16 8M9.5 8H16v6.5"
-            stroke="currentColor"
-            strokeWidth="1.8"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
-      </span>
-    </a>
+      <div className="card__body">
+        <h3 className="card__title">{title}</h3>
+        <p className="card__description">{description}</p>
+      </div>
+
+      <div className="card__foot">
+        <span className="card__domain mono">{store.subdomain}</span>
+        <span className="card__cta" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path
+              d="M8 16 16 8M9.5 8H16v6.5"
+              stroke="currentColor"
+              strokeWidth="1.8"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </span>
+      </div>
+
+      <Link
+        className="card__hit"
+        to={`/tienda/${slug}`}
+        aria-label={`Abrir el apartado de ${name} en el portal`}
+      />
+      <a
+        className="card__ext"
+        href={url}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={`Visitar el sitio externo de ${name}`}
+      >
+        ↗
+      </a>
+    </article>
   )
 }
