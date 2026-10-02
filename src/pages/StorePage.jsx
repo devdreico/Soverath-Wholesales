@@ -51,7 +51,6 @@ export default function StorePage() {
               <Link
                 className="store-siblings__item mono"
                 to={`/tienda/${s.slug}`}
-                style={{ '--accent': s.accent }}
               >
                 <span className="store-siblings__dot" aria-hidden="true" />
                 {s.index} {s.name}

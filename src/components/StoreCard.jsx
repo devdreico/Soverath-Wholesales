@@ -1,19 +1,12 @@
 import { Link } from 'react-router-dom'
 
 export default function StoreCard({ store, index }) {
-  const { slug, index: number, name, category, title, description, url, accent } = store
-
-  const track = (e) => {
-    const rect = e.currentTarget.getBoundingClientRect()
-    e.currentTarget.style.setProperty('--mx', `${e.clientX - rect.left}px`)
-    e.currentTarget.style.setProperty('--my', `${e.clientY - rect.top}px`)
-  }
+  const { slug, index: number, name, category, title, description, url } = store
 
   return (
     <article
       className="card glass"
-      style={{ '--accent': accent, '--delay': `${(index % 12) * 55}ms` }}
-      onPointerMove={track}
+      style={{ '--accent': 'var(--accent-cyan)', '--delay': `${(index % 12) * 55}ms` }}
     >
       <span className="card__index mono" aria-hidden="true">
         {number}

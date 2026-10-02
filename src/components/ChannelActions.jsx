@@ -1,10 +1,10 @@
 import { channelCtas } from '../lib/channels.js'
 
 const CHANNEL_COLORS = {
-  web: '#6ee7f9',
-  whatsapp: '#25d366',
-  mercado: '#ffe066',
-  amazon: '#ff9900',
+  web: '#f2f2f2',
+  whatsapp: '#d8d8d8',
+  mercado: '#bdbdbd',
+  amazon: '#a2a2a2',
   fisico: '#f4f4f4',
 }
 

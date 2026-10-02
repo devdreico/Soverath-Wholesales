@@ -37,12 +37,12 @@ describe('StoreCard', () => {
     expect(external.getAttribute('aria-label')).toContain('Ferreza')
   })
 
-  it('expone el acento del nodo como custom property --accent', () => {
+  it('mantiene el acento visual del nodo en escala de grises', () => {
     const { container } = renderCard()
 
     const card = container.querySelector('article.card')
     expect(card).not.toBeNull()
-    expect(card.style.getPropertyValue('--accent').trim()).toBe(ferreza.accent)
+    expect(card.style.getPropertyValue('--accent').trim()).toBe('var(--accent-cyan)')
   })
 
   it('muestra el slug, la categoría y el subdominio del nodo', () => {

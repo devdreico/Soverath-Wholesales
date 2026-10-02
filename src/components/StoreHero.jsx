@@ -11,7 +11,6 @@ export default function StoreHero({ store, productCount }) {
   return (
     <section
       className="store-hero"
-      style={{ '--accent': store.accent }}
       ref={sectionRef}
     >
       <span className="store-hero__watermark" aria-hidden="true">
@@ -37,7 +36,7 @@ export default function StoreHero({ store, productCount }) {
         <p className="store-hero__description">{store.description}</p>
 
         <div className="store-hero__meta">
-          <SubdomainBadge subdomain={store.subdomain} accent={store.accent} />
+          <SubdomainBadge subdomain={store.subdomain} />
           <span className="store-hero__stock mono">
             {String(productCount).padStart(2, '0')} referencias en catálogo
           </span>

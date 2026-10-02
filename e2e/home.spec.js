@@ -9,6 +9,15 @@ test.describe('Portada', () => {
     )
   })
 
+  test('identifica a Holding como matriz junto a su logotipo', async ({ page }) => {
+    await page.goto('/')
+
+    await expect(page.getByText(/Soverath Holding, casa matriz/)).toBeVisible()
+    await expect(
+      page.getByRole('img', { name: 'Logotipo de Soverath Holding' })
+    ).toHaveAttribute('src', '/soverath-logo.jpg')
+  })
+
   test('lista las 22 tarjetas del directorio de tiendas', async ({ page }) => {
     await page.goto('/')
 

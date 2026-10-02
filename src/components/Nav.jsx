@@ -81,7 +81,6 @@ export default function Nav() {
                   >
                     <span
                       className="nav__dropdown-dot"
-                      style={{ background: store.accent }}
                       aria-hidden="true"
                     />
                     {store.name}

@@ -3,6 +3,7 @@
 /* ------------------------------------------------------------------ */
 
 .store-hero {
+  --accent: var(--accent-cyan);
   position: relative;
   width: 100%;
   border-radius: 32px;
@@ -32,7 +33,8 @@
     transparent 70%
   );
   transform: translateX(-60%);
-  animation: hero-sheen 6.5s var(--ease-out) 0.4s infinite;
+  opacity: 0.32;
+  transform: translateX(0);
 }
 
 .store-hero__watermark {
@@ -176,28 +178,12 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-@keyframes hero-sheen {
-  0% {
-    transform: translateX(-60%);
-    opacity: 0;
-  }
-  25% {
-    opacity: 1;
-  }
-  60% {
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(60%);
-    opacity: 0;
-  }
-}
-
 /* ------------------------------------------------------------------ */
 /* Badge de subdominio                                                 */
 /* ------------------------------------------------------------------ */
 
 .domain-badge {
+  --accent: var(--accent-cyan);
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -217,7 +203,7 @@
   border-radius: 50%;
   background: var(--accent);
   color: var(--accent);
-  animation: pulse-dot 2.2s ease-in-out infinite;
+  box-shadow: 0 0 7px rgba(255, 255, 255, 0.42);
 }
 
 /* ------------------------------------------------------------------ */
@@ -260,6 +246,7 @@
 }
 
 .store-siblings__item {
+  --accent: var(--accent-cyan);
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;

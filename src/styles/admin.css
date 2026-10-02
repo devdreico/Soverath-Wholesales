@@ -28,7 +28,6 @@
   border-radius: 50%;
   background: var(--accent-cyan);
   box-shadow: 0 0 10px var(--accent-cyan);
-  animation: pulse-dot 2.6s ease-in-out infinite;
 }
 
 .admin__title-row {
@@ -59,7 +58,7 @@
   width: min(320px, 60%);
   height: 1px;
   transform-origin: 0 50%;
-  background: linear-gradient(90deg, var(--accent-cyan), rgba(110, 231, 249, 0));
+  background: linear-gradient(90deg, var(--accent-cyan), rgba(255, 255, 255, 0));
   animation: rule-draw 0.9s var(--ease-out) both;
 }
 
@@ -140,7 +139,7 @@
   transform: translateY(-4px);
   border-color: rgba(255, 255, 255, 0.26);
   box-shadow: var(--shadow-card), inset 0 1px 0 0 var(--glass-highlight),
-    0 0 34px -22px rgba(110, 231, 249, 0.9);
+    0 0 24px -22px rgba(255, 255, 255, 0.35);
 }
 
 .admin-kpi__label {
@@ -186,8 +185,8 @@
 }
 
 .admin-filters__search:focus-within {
-  border-color: rgba(110, 231, 249, 0.6);
-  box-shadow: 0 0 0 3px rgba(110, 231, 249, 0.18);
+  border-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.18);
 }
 
 .admin-filters__label {
@@ -267,14 +266,14 @@
 
 .admin-chip:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(110, 231, 249, 0.4);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.24);
 }
 
 .admin-chip.is-active {
-  color: #06110f;
-  background: linear-gradient(135deg, #ffffff, #d7f7ff 55%, var(--accent-cyan));
+  color: #101010;
+  background: linear-gradient(135deg, #fff, #d9d9d9 55%, var(--accent-cyan));
   border-color: transparent;
-  box-shadow: 0 12px 26px -16px rgba(110, 231, 249, 0.9);
+  box-shadow: 0 12px 26px -16px rgba(255, 255, 255, 0.45);
 }
 
 .admin-chip__dot {
@@ -286,23 +285,23 @@
 }
 
 .admin-chip__dot[data-channel='web'] {
-  --dot: #6ee7f9;
+  --dot: #f2f2f2;
 }
 
 .admin-chip__dot[data-channel='whatsapp'] {
-  --dot: #57d9a3;
+  --dot: #d0d0d0;
 }
 
 .admin-chip__dot[data-channel='mercado'] {
-  --dot: #f5c451;
+  --dot: #a6a6a6;
 }
 
 .admin-chip__dot[data-channel='amazon'] {
-  --dot: #ff9a5c;
+  --dot: #858585;
 }
 
 .admin-chip__dot[data-channel='fisico'] {
-  --dot: #c9b8ff;
+  --dot: #f0f0f0;
 }
 
 .admin-chip--status::before {
@@ -314,23 +313,23 @@
 }
 
 .admin-chip[data-status='nuevo'] {
-  --st: #6ee7f9;
+  --st: #f2f2f2;
 }
 
 .admin-chip[data-status='pagado'] {
-  --st: #57d9a3;
+  --st: #d0d0d0;
 }
 
 .admin-chip[data-status='empacado'] {
-  --st: #f0b45e;
+  --st: #b0b0b0;
 }
 
 .admin-chip[data-status='enviado'] {
-  --st: #93a7ff;
+  --st: #909090;
 }
 
 .admin-chip[data-status='entregado'] {
-  --st: #eaf6ef;
+  --st: #ededed;
 }
 
 .admin-chip[data-status='cancelado'] {
@@ -357,43 +356,43 @@
 }
 
 .admin-order[data-channel='web'] {
-  --ch: #6ee7f9;
+  --ch: #f2f2f2;
 }
 
 .admin-order[data-channel='whatsapp'] {
-  --ch: #57d9a3;
+  --ch: #d0d0d0;
 }
 
 .admin-order[data-channel='mercado'] {
-  --ch: #f5c451;
+  --ch: #a6a6a6;
 }
 
 .admin-order[data-channel='amazon'] {
-  --ch: #ff9a5c;
+  --ch: #858585;
 }
 
 .admin-order[data-channel='fisico'] {
-  --ch: #c9b8ff;
+  --ch: #f0f0f0;
 }
 
 .admin-order[data-status='nuevo'] {
-  --st: #6ee7f9;
+  --st: #f2f2f2;
 }
 
 .admin-order[data-status='pagado'] {
-  --st: #57d9a3;
+  --st: #d0d0d0;
 }
 
 .admin-order[data-status='empacado'] {
-  --st: #f0b45e;
+  --st: #b0b0b0;
 }
 
 .admin-order[data-status='enviado'] {
-  --st: #93a7ff;
+  --st: #909090;
 }
 
 .admin-order[data-status='entregado'] {
-  --st: #eaf6ef;
+  --st: #ededed;
 }
 
 .admin-order[data-status='cancelado'] {
@@ -528,7 +527,7 @@
 
 .admin-order__btn:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(110, 231, 249, 0.4);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.24);
 }
 
 .admin-order__btn:disabled {
@@ -662,8 +661,8 @@
 .admin-form__input:focus-visible,
 .admin-form__select:focus-visible {
   outline: none;
-  border-color: rgba(110, 231, 249, 0.6);
-  box-shadow: 0 0 0 3px rgba(110, 231, 249, 0.18);
+  border-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.18);
 }
 
 .admin-form__select option {

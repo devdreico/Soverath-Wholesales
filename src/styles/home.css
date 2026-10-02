@@ -28,8 +28,7 @@
   inset: -10px;
   border-radius: 38px;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: 0 0 30px rgba(110, 231, 249, 0.12);
-  animation: spin-slow 26s linear infinite;
+  box-shadow: 0 0 22px rgba(255, 255, 255, 0.1);
 }
 
 .header__logo {
@@ -120,7 +119,7 @@
 
 .badge:hover {
   transform: translateY(-3px);
-  border-color: rgba(110, 231, 249, 0.5);
+  border-color: rgba(255, 255, 255, 0.5);
 }
 
 /* ------------------------------------------------------------------ */
@@ -237,7 +236,7 @@
 }
 
 .marquee__sep {
-  color: var(--accent-ember);
+  color: #b0b0b0;
   font-size: 0.7rem;
 }
 
@@ -269,7 +268,7 @@
   border-radius: 50%;
   background: var(--section-accent, var(--accent-cyan));
   color: var(--section-accent, var(--accent-cyan));
-  animation: pulse-dot 2.4s ease-in-out infinite;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.35);
 }
 
 .section-heading__row {

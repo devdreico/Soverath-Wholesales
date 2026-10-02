@@ -11,7 +11,7 @@ export default function ProductCard({ product, order = 0 }) {
     <article
       className="product glass"
       style={{
-        '--accent': store?.accent ?? 'var(--text)',
+        '--accent': 'var(--accent-cyan)',
         '--delay': `${(order % 12) * 45}ms`,
       }}
     >
@@ -54,7 +54,6 @@ export default function ProductCard({ product, order = 0 }) {
         <Link
           className="product__store"
           to={`/tienda/${product.storeSlug}`}
-          style={{ '--accent': store?.accent }}
         >
           <span className="product__store-dot" aria-hidden="true" />
           {store?.name}

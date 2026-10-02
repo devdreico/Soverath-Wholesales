@@ -7,10 +7,16 @@ export default function Footer() {
       <div className="footer__inner glass">
         <div className="footer__top">
           <div className="footer__brand">
-            <span className="footer__brand-mark mono">S/</span>
+            <img
+              className="footer__holding-logo"
+              src="/soverath-logo.jpg"
+              alt="Logotipo de Soverath Holding"
+              width="48"
+              height="48"
+            />
             <p className="footer__line">
-              Soverath Wholesales — importador con inventario para nuestras bodegas
-              de productos.
+              Soverath Holding, casa matriz de Soverath Wholesales, importador con
+              inventario para nuestras bodegas de productos.
             </p>
           </div>
 
@@ -30,7 +36,6 @@ export default function Footer() {
               <Link className="footer__store" to={`/tienda/${store.slug}`}>
                 <span
                   className="footer__store-dot"
-                  style={{ background: store.accent }}
                   aria-hidden="true"
                 />
                 {store.name}
